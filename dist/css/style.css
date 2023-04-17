@@ -1,12 +1,81 @@
+:root {
+  --hijauGelap-: #206a5d;
+  --hijauTerang-: #81b214;
+  --abu: #bfdcae;
+  --putih-: #f1f1e8;
+}
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
 }
 
+/* navbar */
+
+/* hiro */
 .hiro {
   background-image: url(../assets/image/Hiro/img-hiro.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+/* back to top */
+#back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  font-size: 26px;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+}
+#back-to-top-btn:hover,
+#back-to-top-btn:focus {
+  color: #fff;
+}
+
+/* Animations */
+.btnEntrance {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: btnEntrance;
+}
+
+/* fadeInUp */
+@keyframes btnEntrance {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.btnExit {
+  animation-duration: 0.25s;
+  animation-fill-mode: both;
+  animation-name: btnExit;
+}
+/* zoomOut */
+
+/* fadeOutDown */
+@keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
 }
