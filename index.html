@@ -18,14 +18,14 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0">
+    <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 shadow-lg">
       <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="https://flowbite.com/" class="flex items-center">
           <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="Flowbite Logo" />
-          <span class="self-center text-2xl font-semibold whitespace-nowrap text-gray-800 dark:text-white">TerasReptile.</span>
+          <span class="self-center text-2xl font-semibold whitespace-nowrap text-gray-900 dark:text-white">TerasReptile</span>
         </a>
         <div class="flex md:order-2">
-          <button id="theme-toggle" type="button" class="text-gray-600 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+          <button id="theme-toggle" type="button" class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
             <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path></svg>
             <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path
@@ -38,10 +38,11 @@
           <button
             data-collapse-toggle="navbar-sticky"
             type="button"
-            class="inline-flex items-center p-2 text-sm text-gray-600 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            class="inline-flex items-center p-2 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
             aria-controls="navbar-sticky"
             aria-expanded="false"
           >
+            <span class="sr-only">Open main menu</span>
             <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
             </svg>
@@ -50,41 +51,46 @@
         <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
           <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
             <li>
-              <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Beranda</a>
+              <a href="#hiro" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500" aria-current="page">Beranda</a>
             </li>
             <li>
               <a
-                href="#"
+                href="#tentang"
                 class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >Tentang</a
               >
             </li>
             <li>
               <a
-                href="#"
+                href="#layanan"
                 class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >Layanan</a
               >
             </li>
             <li>
               <a
-                href="#"
+                href="#gallery"
+                class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Gallery</a
+              >
+            </li>
+            <li>
+              <a
+                href="#produk"
                 class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >Produk</a
               >
             </li>
-
             <li>
               <a
-                href="#"
+                href="#kategori"
                 class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >Kategori</a
               >
             </li>
-
             <li>
               <a
-                href="#"
+                href="#kontak"
                 class="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >Kontak</a
               >
@@ -103,7 +109,7 @@
         <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4 px-10">
           <a
             href="#produk"
-            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-800 rounded-lg bg-white dark:text-white dark:bg-gray-900 dark:hover:bg-gray-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+            class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-900 dark:text-white dark:bg-gray-900 dark:hover:bg-gray-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900 shadow-xl"
           >
             Lihat Produk
             <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -119,22 +125,37 @@
     <!-- end hiro -->
 
     <!-- tentang -->
-    <section id="tentang" class="centang pt-36 pb-16 bg-white dark:bg-gray-800">
+    <section id="tentang" class="centang py-36 bg-white dark:bg-gray-800">
       <div class="container">
-        <a href="#" class="flex flex-col bg-white rounded-lg shadow-lg md:flex-row md:max-w-full dark:border-none dark:bg-gray-900">
-          <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-72 md:rounded-none md:rounded-l-lg" src="dist/assets/image/Produk/produk-1.png" alt="" />
-          <div class="flex flex-col p-4 leading-normal">
-            <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Teras Reptile</h5>
-            <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa natus maxime necessitatibus laudantium voluptatem repudiandae voluptatibus quod excepturi et nulla!</p>
+        <div role="status" class="space-y-8 animate-pulse md:space-y-0 md:space-x-8 md:flex md:items-center">
+          <div class="flex items-center justify-center w-full h-48 bg-gray-300 rounded sm:w-96 dark:bg-gray-700">
+            <svg class="w-12 h-12 text-gray-200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor" viewBox="0 0 640 512">
+              <path
+                d="M480 80C480 35.82 515.8 0 560 0C604.2 0 640 35.82 640 80C640 124.2 604.2 160 560 160C515.8 160 480 124.2 480 80zM0 456.1C0 445.6 2.964 435.3 8.551 426.4L225.3 81.01C231.9 70.42 243.5 64 256 64C268.5 64 280.1 70.42 286.8 81.01L412.7 281.7L460.9 202.7C464.1 196.1 472.2 192 480 192C487.8 192 495 196.1 499.1 202.7L631.1 419.1C636.9 428.6 640 439.7 640 450.9C640 484.6 612.6 512 578.9 512H55.91C25.03 512 .0006 486.1 .0006 456.1L0 456.1z"
+              />
+            </svg>
           </div>
-        </a>
+          <div class="w-full">
+            <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-48 mb-4"></div>
+            <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[480px] mb-2.5"></div>
+            <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+            <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[440px] mb-2.5"></div>
+            <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[460px] mb-2.5"></div>
+            <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 max-w-[360px]"></div>
+          </div>
+          <span class="sr-only">Loading...</span>
+        </div>
       </div>
     </section>
     <!-- end tentang -->
 
     <!-- layanan -->
-    <section id="layanan" class="layanan pt-36 pb-16 bg-white dark:bg-gray-900">
+    <section id="layanan" class="layanan py-36 bg-putih dark:bg-gray-900">
       <div class="container">
+        <div class="w-full text-center mb-14">
+          <h1 class="font-semibold text-4xl pb-3 dark:text-white text-hijau-gelap">Layanan</h1>
+          <div class="h-1 w-20 bg-hijau-terang mx-auto rounded-full dark:bg-blue-700"></div>
+        </div>
         <div class="flex flex-wrap justify-evenly gap-5 md:gap-0">
           <div class="max-w-sm p-6 bg-white border border-gray-300 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-800">
             <img src="dist/assets/image/Icon/shield.png" alt="" width="120" class="mx-auto" />
@@ -162,15 +183,76 @@
     </section>
     <!-- end layanan -->
 
+    <!-- gallery -->
+    <section id="gallery" class="gallery py-36 bg-white dark:bg-gray-900">
+      <div class="container">
+        <div class="w-full text-center mb-14">
+          <h1 class="font-semibold text-4xl pb-3 dark:text-white text-hijau-gelap">Gallery</h1>
+          <div class="h-1 w-20 bg-hijau-terang mx-auto rounded-full dark:bg-blue-700"></div>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="grid gap-4">
+            <div>
+              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg" alt="" />
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="" />
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="grid gap-4">
+            <div>
+              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg" alt="" />
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="" />
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="" />
+            </div>
+          </div>
+          <div class="grid gap-4">
+            <div>
+              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-6.jpg" alt="" />
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="" />
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="" />
+            </div>
+          </div>
+          <div class="grid gap-4">
+            <div>
+              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-9.jpg" alt="" />
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-10.jpg" alt="" />
+            </div>
+            <div>
+              <img class="h-auto max-w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-11.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end gallery -->
+
     <!-- produk -->
-    <section id="produk" class="produk pt-36 pb-16 bg-white dark:bg-gray-800">
+    <section id="produk" class="produk py-36 bg-white dark:bg-gray-800">
       <div class="container"></div>
     </section>
     <!-- end produk -->
 
     <!-- kategori -->
-    <section id="kategori" class="kategori pt-36 pb-16 bg-white dark:bg-gray-900">
+    <section id="kategori" class="kategori py-36 bg-putih dark:bg-gray-900">
       <div class="container">
+        <div class="w-full text-center mb-14">
+          <h1 class="font-medium text-3xl pb-3 dark:text-white text-hijau-gelap">Kategori</h1>
+          <div class="h-1 w-20 bg-hijau-terang mx-auto rounded-full dark:bg-blue-700"></div>
+        </div>
         <div class="flex flex-wrap justify-evenly gap-5 lg:gap-0">
           <div class="w-72 py-12 bg-white border border-gray-300 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-800">
             <img src="dist/assets/image/Kategori/ular.png" alt="" class="mx-auto" />
@@ -194,8 +276,12 @@
     <!-- end layanan -->
 
     <!-- kontak -->
-    <section id="kontak" class="kontak pt-36 pb-16 bg-white dark:bg-gray-800">
+    <section id="kontak" class="kontak py-36 bg-white dark:bg-gray-800">
       <div class="container">
+        <div class="w-full text-center mb-14">
+          <h1 class="font-medium text-3xl pb-3 dark:text-white text-hijau-gelap">Hubungi Kami</h1>
+          <div class="h-1 w-32 bg-hijau-terang mx-auto rounded-full dark:bg-blue-700"></div>
+        </div>
         <form class="lg:px-60">
           <div class="grid gap-6 mb-6 md:grid-cols-2">
             <div>
@@ -264,65 +350,46 @@
     <!-- end kontak -->
 
     <!-- footer -->
-    <footer class="bg-white dark:bg-gray-900">
+    <footer class="bg-putih dark:bg-gray-900">
       <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
           <div class="mb-6 md:mb-0">
-            <a href="#hiro">
-              <span class="self-center text-2xl font-semibold whitespace-nowrap text-gray-900 uppercase dark:text-white">TerasReptile.</span>
+            <a href="https://flowbite.com/" class="flex items-center">
+              <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 mr-3" alt="FlowBite Logo" />
+              <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">TerasReptile</span>
             </a>
           </div>
           <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
             <div>
-              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Kategori Tautan</h2>
+              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2>
               <ul class="text-gray-600 dark:text-gray-400 font-medium">
-                <li class="mb-2">
-                  <a href="#hiro" class="hover:underline">Beranda</a>
+                <li class="mb-4">
+                  <a href="https://flowbite.com/" class="hover:underline">Flowbite</a>
                 </li>
-                <li class="mb-2">
-                  <a href="#tentang" class="hover:underline">Tentang</a>
-                </li>
-                <li class="mb-2">
-                  <a href="#layanan" class="hover:underline">Layanan</a>
-                </li>
-                <li class="mb-2">
-                  <a href="#produk" class="hover:underline">Produk</a>
-                </li>
-                <li class="mb-2">
-                  <a href="#kategori" class="hover:underline">Kategori</a>
-                </li>
-                <li class="mb-2">
-                  <a href="#kontak" class="hover:underline">Kontak</a>
+                <li>
+                  <a href="https://tailwindcss.com/" class="hover:underline">Tailwind CSS</a>
                 </li>
               </ul>
             </div>
             <div>
-              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Kategori Produk</h2>
+              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Follow us</h2>
               <ul class="text-gray-600 dark:text-gray-400 font-medium">
-                <li class="mb-2">
-                  <a href="#" class="hover:underline">Ular</a>
+                <li class="mb-4">
+                  <a href="https://github.com/themesberg/flowbite" class="hover:underline">Github</a>
                 </li>
-                <li class="mb-2">
-                  <a href="#" class="hover:underline">Biawak</a>
-                </li>
-                <li class="mb-2">
-                  <a href="#" class="hover:underline">Bunglon</a>
-                </li>
-                <li class="mb-2">
-                  <a href="#" class="hover:underline">Buaya</a>
+                <li>
+                  <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Discord</a>
                 </li>
               </ul>
             </div>
             <div>
-              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Hubungi Kami</h2>
+              <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Legal</h2>
               <ul class="text-gray-600 dark:text-gray-400 font-medium">
-                <li class="mb-4 flex items-center">
-                  <i class="bx bx-envelope"></i>
-                  <a href="#" class="pl-1 hover:underline">Terasreptile@gmail.com</a>
+                <li class="mb-4">
+                  <a href="#" class="hover:underline">Privacy Policy</a>
                 </li>
-                <li class="mb-4 flex items-center">
-                  <i class="bx bxl-whatsapp"></i>
-                  <a href="#" class="pl-1 hover:underline">+62 8992 9287</a>
+                <li>
+                  <a href="#" class="hover:underline">Terms &amp; Conditions</a>
                 </li>
               </ul>
             </div>
@@ -330,7 +397,7 @@
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-between">
-          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Terasreptile™</a>. All Rights Reserved. </span>
+          <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">TerasReptile™</a>. All Rights Reserved. </span>
           <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
             <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -395,7 +462,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
     <!-- javascript -->
     <script src="dist/js/script.js"></script>
-
-    <!-- <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" /> -->
   </body>
 </html>

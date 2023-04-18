@@ -12,13 +12,34 @@
 }
 
 /* navbar */
+#navbar {
+  /* background-color: var(--hijauGelap-); */
+}
+
+.navbar {
+  box-shadow: 2px 2px 5px #202020;
+  transition: all 500ms ease-in-out;
+}
+
+.navbar > div {
+  transition: all 1000ms ease-in-out;
+}
 
 /* hiro */
 .hiro {
-  background-image: url(../assets/image/Hiro/img-hiro.jpg);
+  /* background-image: url(../assets/image/Hiro/img-hiro.jpg); */
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.hiro h1 {
+  text-shadow: 2px 2px 2px black;
+}
+
+.hiro p {
+  text-shadow: 1px 1px 1px black;
 }
 
 /* back to top */
