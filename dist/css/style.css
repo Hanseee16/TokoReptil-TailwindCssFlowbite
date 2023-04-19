@@ -11,11 +11,11 @@
   font-family: "Poppins", sans-serif;
 }
 
-/* navbar */
-#navbar {
-  /* background-color: var(--hijauGelap-); */
+section {
+  min-height: 100vh;
 }
 
+/* navbar */
 .navbar {
   box-shadow: 2px 2px 5px #202020;
   transition: all 500ms ease-in-out;
@@ -23,6 +23,10 @@
 
 .navbar > div {
   transition: all 1000ms ease-in-out;
+}
+
+ul.menu li a.active {
+  color: #3b82f6;
 }
 
 /* hiro */
