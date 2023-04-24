@@ -23,6 +23,7 @@
 
 ul.menu li a.active {
   color: #3b82f6;
+  background-color: transparent;
 }
 
 /* hiro */
